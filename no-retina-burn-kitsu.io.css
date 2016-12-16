@@ -6,7 +6,7 @@
   */
   .global-row, .primary-nav, .cover-nav, .library-list, .library-entry, .entry-wrapper.row,
   .add-comment-wrapper, .stream-item-comments, .stream-error-wrapper, body, .d-inline,
-  .new-comment, .media-posters, .quick-update {
+  .new-comment, .media-posters, .quick-update, .comment-actions {
     background: rgb(39, 44, 51) !important;
     border-color: rgb(39, 44, 51) !important;
     color: white !important;
@@ -21,10 +21,32 @@
   .checklist, .panel-heading, .nav-tabs, .favorite-placeholder,
   .footer-social, .dropdown-menu, .feed-actions .card,
   .d-inline .active, .user-menu-drop .dropdown-item,
-  .settings--header, .settings--section-head {
+  .settings--header, .settings--section-head,
+  .typeahead-item-container, .tag-primary, .tagged-media,
+  .favorite-series-panel .active {
     background: rgb(39, 44, 51) !important;
     border-color: #545d69 !important;
     border-width: 1px !important;
+    color: white !important;
+  }
+  /*
+  Give the textarea and surrounding elements borders when writing
+  an activity.
+  */
+  .tag-media input, .add-content-expanded,
+  .tag-media, .add-content-expanded textarea {
+    background: rgb(39, 44, 51) !important;
+    border-color: #545d69 !important;
+    border-bottom-width: 1px !important;
+    border-bottom-style: solid !important;
+    border-top-style: none !important;
+    color: white !important;
+  }
+  .add-content-expanded {
+    background: rgb(39, 44, 51) !important;
+    border-color: #545d69 !important;
+    border-top-width: 1px !important;
+    border-top-style: solid !important;
     color: white !important;
   }
   /*
