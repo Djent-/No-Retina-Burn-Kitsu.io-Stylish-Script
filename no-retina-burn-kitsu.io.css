@@ -4,7 +4,7 @@
   */
   .global-row, .primary-nav, .cover-nav, .library-list, .library-entry, .entry-wrapper.row,
   .add-comment-wrapper, .stream-item-comments, .stream-error-wrapper, body, .d-inline,
-  .new-comment, .media-posters, .quick-update, .comment-actions {
+  .new-comment, .media-posters, .quick-update, .comment-actions, .search--header {
     background: rgb(39, 44, 51) !important;
     border-color: rgb(39, 44, 51) !important;
     color: white !important;
@@ -21,7 +21,8 @@
   .d-inline .active, .user-menu-drop .dropdown-item,
   .settings--header, .settings--section-head,
   .typeahead-item-container, .tag-primary, .tagged-media,
-  .favorite-series-panel .active {
+  .favorite-series-panel .active, .search--drop,
+  .search--group-header {
     background: rgb(39, 44, 51) !important;
     border-color: #545d69 !important;
     border-width: 1px !important;
@@ -121,7 +122,7 @@
     fill: white !important;
   }
   /*
-  Remove the intercom button
+  Remove the intercom button.
   */
   iframe {
     display: none !important;
@@ -149,12 +150,17 @@
     background: rgb(39, 44, 51) !important;
   }
   /*
-  The notifications alarm SVG turns black when the navbar is not transparent.
-  Trying to make it white, but can't seem to.
+  Make search results not turn white on hover.
   */
-  .collapse a, .notifications svg, .svgIcon-use, svg {
+  .search--results li:hover {
+    background: #545d69 !important;
+  }
+  /*
+  Make Library, Anime, and Manga navbar item
+  text white.
+  */
+  .collapse a {
     color: white !important;
-    fill: white !important;
   }
   /*
   Remove the shadow from cover photos.
