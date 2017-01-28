@@ -4,7 +4,7 @@
   */
   .global-row, .primary-nav, .cover-nav, .library-list, .library-entry, .entry-wrapper.row,
   .add-comment-wrapper, .stream-item-comments, .stream-error-wrapper, body, .d-inline,
-  .new-comment, .media-posters, .quick-update, .comment-actions, .search--header {
+  .new-comment, .media-posters, .quick-update, .comment-actions, .library-sorting {
     background: rgb(39, 44, 51) !important;
     border-color: rgb(39, 44, 51) !important;
     color: white !important;
@@ -21,8 +21,7 @@
   .d-inline .active, .user-menu-drop .dropdown-item,
   .settings--header, .settings--section-head,
   .typeahead-item-container, .tag-primary, .tagged-media,
-  .favorite-series-panel .active, .search--drop,
-  .search--group-header {
+  .favorite-series-panel .active {
     background: rgb(39, 44, 51) !important;
     border-color: #545d69 !important;
     border-width: 1px !important;
@@ -104,30 +103,6 @@
     font-size: 14px !important;
   }
   /*
-  Make the star and notifications icon white.
-  */
-  .entry-rating-star svg path, .notifications svg path {
-    fill: white !important;
-  }
-  /*
-  Make the search svg gray.
-  */
-  .site-search__icon path {
-    fill: #545d69 !important;
-  }
-  /*
-  But make it white again when the navbar is clear.
-  */
-  .transparent .site-search__icon path {
-    fill: white !important;
-  }
-  /*
-  Remove the intercom button.
-  */
-  iframe {
-    display: none !important;
-  }
-  /*
   Make the navbar background be transparent at the top,
   as it's supposed to be.
   */
@@ -150,22 +125,23 @@
     background: rgb(39, 44, 51) !important;
   }
   /*
-  Make search results not turn white on hover.
+  The notifications alarm SVG turns black when the navbar is not transparent.
+  Trying to make it white, but can't seem to.
   */
-  .search--results li:hover {
-    background: #545d69 !important;
-  }
-  /*
-  Make Library, Anime, and Manga navbar item
-  text white.
-  */
-  .collapse a {
+  .collapse a, .notifications svg, .svgIcon-use, svg {
     color: white !important;
+    fill: white !important;
   }
   /*
   Remove the shadow from cover photos.
   */
   .dark-cover-overlay {
     background: 0 0 !important;
+  }
+  /*
+  Remove the message iframe in the lower right corner
+  */
+  .intercom-container, .intercom-launcher-frame {
+    display: none !important;
   }
 }
