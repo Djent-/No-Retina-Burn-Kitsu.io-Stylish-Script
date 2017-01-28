@@ -4,7 +4,8 @@
   */
   .global-row, .primary-nav, .cover-nav, .library-list, .library-entry, .entry-wrapper.row,
   .add-comment-wrapper, .stream-item-comments, .stream-error-wrapper, body, .d-inline,
-  .new-comment, .media-posters, .quick-update, .comment-actions, .library-sorting {
+  .new-comment, .media-posters, .quick-update, .comment-actions, .library-sorting,
+  .search--results, .search--group-header, .entry-wrapper.row:hover{
     background: rgb(39, 44, 51) !important;
     border-color: rgb(39, 44, 51) !important;
     color: white !important;
@@ -21,7 +22,7 @@
   .d-inline .active, .user-menu-drop .dropdown-item,
   .settings--header, .settings--section-head,
   .typeahead-item-container, .tag-primary, .tagged-media,
-  .favorite-series-panel .active {
+  .favorite-series-panel .active, .search--header {
     background: rgb(39, 44, 51) !important;
     border-color: #545d69 !important;
     border-width: 1px !important;
@@ -48,15 +49,11 @@
     color: white !important;
   }
   /*
-  Library entries transition on hover. This tells them to transition
-  to a lighter background, dark border.
+  Give search results transition on hover. This tells them to transition
+  to a lighter background.
   */
-  .entry-wrapper.row:hover {
-    /*
+  .search--results li:hover {
     background: #545d69 !important;
-    */
-    background: rgb(39, 44, 51) !important;
-    border-color: rgb(39, 44, 51) !important;
   }
   /*
   This actually gets rid of the number input spin buttons until you
