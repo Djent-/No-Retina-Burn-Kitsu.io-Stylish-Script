@@ -130,6 +130,12 @@
     border-bottom: 0px !important;
   }
   /*
+  Remove the anti-adblock messages.
+  */
+  .kitsu-ad {
+    display: none !important;
+  }
+  /*
   The global container on the anime and manga page
   has a linear gradient background for some reason
   and it's literally just half and half purple and
